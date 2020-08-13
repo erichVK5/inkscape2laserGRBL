@@ -10,6 +10,8 @@ G-Code suitable for plotting with inexpensive laser cutters running GRBL.
 **this extension has been tested on a cheap ebay laser cutter running GRBL 0.8c.
 Users exporting gcode for other devices do so at their own risk.**
 
+**this extension has been tested on inkscape version 0.92**
+
 Author: [Erich S. Heinzle](http://github.com/erichVK5/)
 
 Website: [http://github.com/erichVK5/inkscape2laserGRBL](http://github.com/erichVK5/inkscape2laserGRBL)
@@ -36,15 +38,16 @@ Usage
 =====
 
 * Size and locate your image appropriately:
-	* The CupCake CNC build platform size is 100mm x 100mm.
-	* Setting units to **mm** in Inkscape makes it easy to size your drawing.
-	* The extension will automatically attempt to center everything.
-* Convert all text to paths:
-	* Select all text objects.
+	* You need to be mindful of the work area of your cutter.
+	* Set units to **px** in Inkscape in document properties.
+	* The extension attempts to center everything, but you may need to experiment with placement of your graphics.
+	* Test cuts to confirm accurate scaling during export are strongly recommended
+* Convert all text and objects to paths:
+	* Select all objects.
 	* Choose **Path | Object to Path**.
 * Save as G-Code:
 	* **File | Save a Copy**.
-	* Select **MakerBot Unicorn G-Code (\*.gcode)**.
+	* Select **simple laser cutter GRBL G-Code (\*.gcode)**.
 	* Save your file.
 * Preview
 	* [Universal gcode Sender](https://winder.github.io/ugs_website/) is a cross platform java application that also allows visualisation.
