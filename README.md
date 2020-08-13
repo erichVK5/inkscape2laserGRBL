@@ -61,6 +61,7 @@ Usage
 TODOs
 =====
 
+* Check default scaling during export.
 * Modify code to work with Inkscape 1.x
 * Rename `*PolyLine` stuff to `*Path` to be less misleading.
 * Parameterize smoothness for curve approximation.
