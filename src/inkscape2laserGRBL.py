@@ -22,7 +22,7 @@ import inkex
 from math import *
 import getopt
 from inkscape2laserGRBL.context import GCodeContext
-from inskcape2laserGRBL.svg_parser import SvgParser
+from inkscape2laserGRBL.svg_parser import SvgParser
 
 class MyEffect(inkex.Effect):
   def __init__(self):
